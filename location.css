@@ -1,156 +1,314 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-    {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+{
+margin: 0;
+font-family: 'Inter', sans-serif;
 }
-
 body {
-    margin-bottom: 4rem;
+margin-bottom: 4rem;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+#heading {
+font-size: 3rem;
+margin: 2.5rem 0 1rem 2.5rem;
 }
 
-.title {
-    font-size: 2rem;
-    margin: 2rem 0 1rem 0;
-    text-align: center;
+#upper-details-flex {
+margin: 1rem 2.5rem;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+padding: 1rem 0;
 }
 
-.ip-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.upper-flex-pairs {
+margin: 0.1rem 18rem 0.5rem 0;
 }
 
-.detail-group {
-    width: 100%;
-    max-width: 400px;
-    margin: 1rem;
-    text-align: center;
-}
-
-.detail-label {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.detail-value {
-    font-size: 1.2rem;
+.upper-flex-items {
+font-size: 1.3rem;
+font-weight: 600;
+margin: 0 0 0.7rem 0;
 }
 
 #map-display {
-    margin: 2rem auto;
-    width: 100%;
-    height: 40vh;
-    border: 1px solid black;
+margin: 1rem auto;
+width: 93%;
+height: 35rem;
+border: 1px solid black;
 }
 
-.additional-data {
-    margin: 2rem 0;
+#additional-data {
+margin: 2rem 2.5rem;
+display: flex;
+flex-direction: column;
 }
 
 .secondary-data {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+padding: 0.3rem;
+margin: 0.5rem;
+font-weight: 600;
+font-size: 1.2rem;
+}
+
+/* Changing default font weight of all spans */
+span {
+font-weight: 400;
 }
 
 #search-box {
-    margin: 2rem 0;
-    height: 3rem;
-    width: 100%;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 0.3rem;
-    background: url(search.png) no-repeat;
-    background-size: 1.2rem;
-    background-position-x: 10px;
-    background-position-y: center;
-    padding-left: 2.5rem;
+margin-left: 2.5rem;
+height: 3rem;
+width: 93.5%;
+box-sizing: border-box;
+border: 2px solid black;
+border-radius: 0.3rem;
+background: url(search.png) no-repeat;
+background-size: 1.2rem;
+background-position-x: 10px;
+background-position-y: center;
+padding-left: 2.5rem;
 }
 
 #details-tile-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+margin: 2rem 2.5rem;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 
 .details-tiles {
-    border: 2px solid black;
-    border-radius: 0.3rem;
-    padding: 1rem;
-    width: 90%;
-    max-width: 600px;
-    margin: 1rem;
+border: 2px solid black;
+border-radius: 0.3rem;
+padding: 1rem;
+width: 30rem;
+margin: 1rem 0;
 }
 
 .details {
-    margin-bottom: 1.5rem;
+margin-bottom: 1.5rem;
 }
 
-@media only screen and (min-width: 768px) {
-    .ip-details {
-        justify-content: space-between;
-    }
+.hidden {
+display: none;
+}
 
-    .detail-group {
-        width: auto;
-        margin: 1rem;
-        text-align: left;
-    }
+/* Media Queries */
 
-    #map-display {
-        width: 60%;
-        height: 50vh;
-        margin: 2rem 0;
-        float: left;
-    }
+@media screen and (max-width: 768px) {
+#upper-details-flex {
+flex-direction: column;
+align-items: center;
+}
 
-    .additional-data {
-        margin: 2rem 0 2rem 2rem;
-        width: 35%;
-        float: left;
-    }
+.upper-flex-pairs {
+margin: 0.1rem 0 0.5rem 0;
+text-align: center;
+}
 
-    #search-box {
-        width: 50%;
-        float: right;
-    }
-
-    #details-tile-flex {
-        justify-content: space-between;
-    }
-
-    .details-tiles {
-        width: 45%;
-        max-width: 400px;
-        margin: 1rem 0;
-    }
+#map-display {
+height: 25rem;
 }
 
 #details-tile-flex {
-    margin: 2rem 2.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
 }
 
 .details-tiles {
-    border: 2px solid black;
-    border-radius: 0.3rem;
-    padding: 1rem;
-    width: 30rem;
-    margin: 1rem 0;
+width: 80%;
+}
 }
 
-.details {
-    margin-bottom: 1.5rem;
+@media screen and (max-width: 767px) {
+  /* Adjusting margin for the heading */
+  #heading {
+  margin: 1.5rem 0 1rem 1.5rem;
+  }
+  
+  /* Adjusting flex direction and margin for the upper details section */
+  #upper-details-flex {
+  flex-direction: column;
+  margin: 1rem 1.5rem;
+  }
+  
+  /* Adjusting margin for the individual items in the upper details section */
+  .upper-flex-pairs {
+  margin: 0.1rem 0 0.5rem 0;
+  }
+  
+  /* Adjusting font size for the upper details items */
+  .upper-flex-items {
+  font-size: 1.1rem;
+  }
+  
+  /* Adjusting margin for the search box */
+  #search-box {
+  margin: 1rem 1.5rem;
+  }
+  
+  /* Adjusting width for the details tiles */
+  .details-tiles {
+  width: 100%;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjusting margin for the heading */
+  #heading {
+  margin: 2rem 0 1rem 2.5rem;
+  }
+  
+  /* Adjusting flex direction and margin for the upper details section */
+  #upper-details-flex {
+  flex-direction: column;
+  margin: 1.5rem 2.5rem;
+  }
+  
+  /* Adjusting margin for the individual items in the upper details section */
+  .upper-flex-pairs {
+  margin: 0.1rem 0 0.5rem 0;
+  }
+  
+  /* Adjusting font size for the upper details items */
+  .upper-flex-items {
+  font-size: 1.2rem;
+  }
+  
+  /* Adjusting margin for the search box */
+  #search-box {
+  margin: 1.5rem 2.5rem;
+  }
+  
+  /* Adjusting width for the details tiles */
+  .details-tiles {
+  width: calc(50% - 1rem);
+  }
+  }
+  
+  @media screen and (min-width: 1024px) {
+  /* Adjusting margin for the heading */
+  #heading {
+  margin: 2.5rem 0 1rem 2.5rem;
+  }
+  
+  /* Adjusting flex direction and margin for the upper details section */
+  #upper-details-flex {
+  flex-direction: row;
+  margin: 1.5rem 2.5rem;
+  }
+  
+  /* Adjusting margin for the individual items in the upper details section */
+  .upper-flex-pairs {
+  margin: 0.1rem 18rem 0.5rem 0;
+  }
+  
+  /* Adjusting font size for the upper details items */
+  .upper-flex-items {
+  font-size: 1.3rem;
+  }
+  
+  /* Adjusting margin for the search box */
+  #search-box {
+  margin: 2rem 2.5rem;
+  }
+  
+  /* Adjusting width for the details tiles */
+  .details-tiles {
+  width: calc(33.33% - 1rem);
+  }
+  }
+  
+  /* Adjusting height for map display */
+  #map-display {
+  height: 30rem;
+  }
+  
+  /* Adjusting margin for the additional data section */
+  #additional-data {
+  margin: 2rem 2.5rem 4rem 2.5rem;
+  }
+  
+  /* Adjusting font size for the secondary data items */
+  .secondary-data {
+  font-size: 1.2rem;
+  }
+  
+  /* Adjusting padding for
+  @media only screen and (max-width: 768px) {
+#upper-details-flex {
+flex-direction: column;
+margin: 1rem 0.5rem;
+align-items: center;
+}
+
+.upper-flex-pairs {
+margin: 0.5rem 0;
+text-align: center;
+}
+
+#search-box {
+margin: 1rem 0.5rem;
+width: 95%;
+}
+
+#details-tile-flex {
+margin: 2rem 0.5rem;
+justify-content: center;
+}
+
+.details-tiles {
+width: 90%;
+margin: 1rem 0;
+}
+}
+
+@media only screen and (max-width: 480px) {
+#heading {
+font-size: 2rem;
+margin: 1.5rem 0 1rem 1rem;
+}
+
+#upper-details-flex {
+margin: 1rem 0.5rem;
+flex-direction: column;
+align-items: center;
+}
+
+.upper-flex-pairs {
+margin: 0.5rem 0;
+text-align: center;
+}
+
+.upper-flex-items {
+font-size: 1rem;
+margin-bottom: 0.5rem;
+}
+
+#map-display {
+height: 25rem;
+}
+
+#search-box {
+margin: 1rem 0.5rem;
+width: 95%;
+height: 2.5rem;
+}
+
+#details-tile-flex {
+margin: 1.5rem 0.5rem;
+justify-content: center;
+}
+
+.details-tiles {
+width: 90%;
+margin: 1rem 0;
+padding: 0.8rem;
+}
+
+.secondary-data {
+font-size: 1rem;
+margin: 0.3rem;
+}
 }

@@ -1,7 +1,7 @@
 // Retrieving ip address from local storage
-const ipAddress = window.localStorage.getItem('ip');
+let ipAddress = window.localStorage.getItem('ip');
 
-// DOM elements
+//------------------------------------------------------------------------------------------------------------------------------------
 const ipEl = document.getElementById('ip');
 const latEl = document.getElementById('latitude');
 const longEl = document.getElementById('longitude');
@@ -16,42 +16,42 @@ const messageEl = document.getElementById('message');
 const searchBoxInputEl = document.getElementById('search-box');
 const mapDisplayEl = document.getElementById('map-display');
 const displayPostOfficesDiv = document.getElementById('details-tile-flex');
-ipEl.textContent = ipAddress;
+ipEl.textContent = ipAddress
 
+//------------------------------------------------------------------------------------------------------------------------------------
 // Functions
 
 // 01. Display location on map
 function displayMap(latitude, longitude) {
-  const html = `
-    <iframe 
-      src="https://maps.google.com/maps?q=${latitude}, ${longitude}&output=embed" 
-      width="100%" 
-      height="100%" 
-      frameborder="0" 
-      style="border:0">
-    </iframe>
-  `;
+  let html = `
+  <iframe 
+  src="https://maps.google.com/maps?q=${latitude}, ${longitude}&output=embed" 
+  width="100%" 
+  height="100%" 
+  frameborder="0" 
+  style="border:0">
+  </iframe>
+  `
   mapDisplayEl.innerHTML = html;
 }
 
 // 02. Display Post offices in given pincode below map in card forms
 function displayPostOffices(poName, poBranch, poDeliveryStatus, poDistrict, poDivision) {
-  const html = `
-    <div class="details-tiles ${poName.toLowerCase()} ${poBranch.toLowerCase()}">
-      <p class="details">Name: <span id="poName">${poName}</span> </p>
-      <p class="details">Branch Type: <span id="poBranch">${poBranch}</span></p>
-      <p class="details">Delivery Status: <span id="poDeliveryStatus">${poDeliveryStatus}</span></p>
-      <p class="details">District: <span id="poDistrict">${poDistrict}</span></p>
-      <p class="details">Division: <span id="poDivision">${poDivision}</span></p>
-    </div>
-  `;
+  let html = `
+  <div class="details-tiles ${poName.toLowerCase()} ${poBranch.toLowerCase()}">
+    <p class="details">Name: <span id="poName">${poName}</span> </p>
+    <p class="details">Branch Type: <span id="poBranch">${poBranch}</span></p>
+    <p class="details">Delivery Status: <span id="poDeliveryStatus">${poDeliveryStatus}</span></p>
+    <p class="details">District: <span id="poDistrict">${poDistrict}</span></p>
+    <p class="details">Division: <span id="poDivision">${poDivision}</span></p>
+  </div>
+  `
   displayPostOfficesDiv.insertAdjacentHTML('beforeend', html);
 }
 
-// Fetching data from url and also adding event listener to search box
 //------------------------------------------------------------------------------------------------------------------------------------
 
-
+// Fetching data from url and also adding event listener to search box
 
 fetch(`https://ipinfo.io/${ipAddress}/geo?token=2f12b9591109d8`)
   .then(response => response.json())
