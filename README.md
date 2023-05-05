@@ -1,5 +1,7 @@
 # F3-ModuleTest-05-05-2023
-This project uses JavaScript to get the user's IP address and retrieve information from an API on button click. It displays the user's location on Google Maps using latitude and longitude data, gets the time of the user's location using timezone data, and shows a list of post offices in the area based on the pincode received. 
+This project uses JavaScript to get the user's IP address and retrieve information from an API on button click. It displays the user's location on Google Maps using latitude and longitude data, gets the time of the user's location using timezone data, and shows a list of post offices in the area based on the pincode received.
+
+https://course.acciojob.com/start-project?project=0ce65c40-b170-42bf-a3a6-ec81050deeed
 
 
 STEP 1/2
@@ -10,6 +12,8 @@ STEP 1/2
 Task
 ----------
 1. Get user's IP Address using js scripts, refer to the gfg link given. - https://www.geeksforgeeks.org/how-to-get-client-ip-address-using-javascript/
+
+
 2. Once done, hit an api request at https://ipinfo.io/${IP}/geo , where ${IP} will be the IP of the user.
 3. Get the IP Address on the load of the page, where as get the information from the API on the click of the button.
 4. Using the lat,long given in the location of the json which you'll get in point 3, show the user's location on google map.
@@ -22,6 +26,8 @@ Relevant Links :
 
 Figma Link- https://www.figma.com/file/PwKrL5twQM6cDwWmL2HoYK/Untitled?node-id=0-1&t=Lo4Jnf4QGzxO0aCH-0
 How to put lat,long on map - https://stackoverflow.com/questions/33464192/display-an-embedded-google-map-iframe-with-a-marker-on-a-certain-latitude-and-lo
+
+
 Tutorial- https://drive.google.com/file/d/1pPgAwDs0A8dZMVRQkdEsLE63n6JhYAzV/view?usp=sharing
 
 

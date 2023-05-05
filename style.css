@@ -1,0 +1,15 @@
+
+body {
+    margin-bottom: 4rem;
+    
+  }
+  
+#getDetails {
+  margin: 0 0 1rem 2.5rem;
+  padding: 0.7rem 3rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}

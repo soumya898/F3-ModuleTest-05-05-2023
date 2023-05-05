@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="location.css">
+    <title>Map page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+          <h1 class="title">My Public IP Address: <span class="ip-address"></span></h1>
+        </header>
+        
+        <section class="ip-details">
+          <div class="detail-group">
+            <p class="detail-label">Latitude:</p>
+            <p class="detail-value"><span class="latitude"></span></p>
+          </div>
+          <div class="detail-group">
+            <p class="detail-label">Longitude:</p>
+            <p class="detail-value"><span class="longitude"></span></p>
+          </div>
+          <div class="detail-group">
+            <p class="detail-label">City:</p>
+            <p class="detail-value"><span class="city"></span></p>
+          </div>
+          <div class="detail-group">
+            <p class="detail-label">Region:</p>
+            <p class="detail-value"><span class="region"></span></p>
+          </div>
+          <div class="detail-group">
+            <p class="detail-label">Organisation:</p>
+            <p class="detail-value"><span class="organisation"></span></p>
+          </div>
+          <div class="detail-group">
+            <p class="detail-label">Hostname:</p>
+            <p class="detail-value"><span class="hostname"></span></p>
+          </div>
+        </section>
+        
+        <div id="map-display"></div>
+        
+        <section class="additional-data">
+          <p class="detail-group">
+            <span class="detail-label">Time Zone:</span>
+            <span class="detail-value"><span class="time-zone"></span></span>
+          </p>
+          <p class="detail-group">
+            <span class="detail-label">Date and Time:</span>
+            <span class="detail-value"><span class="date-time"></span></span>
+          </p>
+          <p class="detail-group">
+            <span class="detail-label">Pincode:</span>
+            <span class="detail-value"><span class="pincode"></span></span>
+          </p>
+          <p class="detail-group">
+            <span class="detail-label">Message:</span>
+            <span class="detail-value"><span class="message"></span></span>
+    <!-- <span>Number of pincode(s) found: </span><span id="message"> -->
+
+          </p>
+        </section>
+      </div>
+      
+     <input type="text" id="search-box" name="search-box" class="hidden">
+     <div id="details-tile-flex"></div>
+
+
+     <script src="location.js"></script>
+
+
+
+</body>
+
+</html>
