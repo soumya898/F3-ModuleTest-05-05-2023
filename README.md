@@ -35,8 +35,8 @@ Marking Scheme (100 Marks)
 5. Use the latitude and longitude from the JSON response to show the user's location on Google Maps. (20 marks)
 6. Use the timezone from the JSON response to get the time of the user's location. (15 marks)
 7. Getting data and showing it with proper error handling (15 Marks)
-8. Display a list of post offices in the area corresponding to the pincode received in point 2. (10 marks)
-9 .Add a search box to filter the list of post offices by name and branch office. (5 marks)
+8. Display a list of post offices in the area corresponding to the pincode received in point 2. (10 marks) <br>
+9 .Add a search box to filter the list of post offices by name and branch office. (5 marks) <br>
 10 .Create a UI according to the design in the Figma link provided. (10 marks)
     
     
