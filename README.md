@@ -38,3 +38,21 @@ Marking Scheme (100 Marks)
 8. Display a list of post offices in the area corresponding to the pincode received in point 2. (10 marks)
 9 .Add a search box to filter the list of post offices by name and branch office. (5 marks)
 10 .Create a UI according to the design in the Figma link provided. (10 marks)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
