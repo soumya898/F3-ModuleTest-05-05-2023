@@ -4,7 +4,7 @@ This project uses JavaScript to get the user's IP address and retrieve informati
 
 STEP 1/2
 
-Project Overview
+
 <b>Project Overview (100 Marks)<b>
 
 Task
